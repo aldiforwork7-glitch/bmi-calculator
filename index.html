@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>BMI Calculator</h1>
+            <p>Kenali indeks massa tubuhmu</p>
+        </div>
+
+        <div class="card">
+            <div class="input-group">
+                <label for="berat">Berat Badan (kg)</label>
+                <input type="number" id="berat"
+                       placeholder="Contoh: 60" min="1" step="any">
+            </div>
+
+            <div class="input-group">
+                <label for="tinggi">Tinggi Badan (cm)</label>
+                <input type="number" id="tinggi"
+                       placeholder="Contoh: 170" min="1" step="any">
+            </div>
+
+            <button id="hitung">Hitung BMI</button>
+            <button id="reset" class="reset">Reset</button>
+
+            <p id="pesan" role="alert"></p>
+
+            <div id="hasil" class="hasil" hidden>
+                <p>Hasil BMI kamu</p>
+                <h2 id="nilai">0</h2>
+                <h3 id="kategori"></h3>
+                <p id="saran"></p>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>Kategori BMI Dewasa</h3>
+            <p>Kurang: di bawah 18,5</p>
+            <p>Normal: 18,5–24,9</p>
+            <p>Berlebih: 25–29,9</p>
+            <p>Obesitas: 30 ke atas</p>
+        </div>
+
+        <footer>
+            BMI Calculator &copy; 2026
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
